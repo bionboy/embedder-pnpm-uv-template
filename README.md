@@ -7,6 +7,7 @@ pnpm setup
 ```
 
 # Manual setup
+> see [setup.sh](./setup.sh)
 
 1. `pnpm add @embedder/embedder`
    > Note, didn't run post install script
