@@ -44,8 +44,7 @@ pnpm setup
    > After this, you should see it start up without and errors
    > `pnpm run embedder`
 
-# [!NOTE]
-
+> [!NOTE]
 > Further testing needed
 
 # Media
