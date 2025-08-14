@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "setup": "bash setup.sh",
+    "embedder": "embedder"
+  },
+  "dependencies": {
+    "@embedder/embedder": "^1.0.4"
+  }
+}
