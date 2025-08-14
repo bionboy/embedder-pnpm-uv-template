@@ -26,8 +26,8 @@ uv pip install -r node_modules/@embedder/embedder/bundle/repomap-python/requirem
 source .venv/bin/activate
 
 # 6. Run embedder
-#After this, you should see it start up without and errors
-pnpm run embedder
-
+# After this, you should see it start up without and errors
+echo "Setup complete"
+echo "Run 'pnpm run embedder' to start the embedder"
 
 # [!NOTE] > Further testing needed

@@ -7,11 +7,10 @@ pnpm setup
 ```
 
 # Manual setup
+
 > see [setup.sh](./setup.sh)
 
-1. `pnpm add @embedder/embedder`
-   > Note, didn't run post install script
-2. create package.json with:
+1. Make sure package.json exists with:
 
 ```json
 {
@@ -24,19 +23,35 @@ pnpm setup
 }
 ```
 
-3. `uv venv`
-4. `uv pip install -r path/to/requirements.txt`
-5. `source .venv/bin/activate`
-6. `pnpm run embedder`
+2. Install embedder
 
-After this, you should see it start up without and errors
+   > Note, pnpm doesn't run post install script
+   > avoiding it for now to not install python dependencies globally
+   > `pnpm install`
+
+3. Create virtual environment
+   `uv venv`
+
+4. Install python dependencies
+   `uv pip install -r node_modules/@embedder/embedder/bundle/repomap-python/requirements.txt`
+
+5. Activate virtual environment
+
+   > (python command resolves to the uv venv in this repo)
+   > `source .venv/bin/activate`
+
+6. Run embedder
+   > After this, you should see it start up without and errors
+   > `pnpm run embedder`
+
+# [!NOTE]
 
 > Further testing needed
-
 
 # Media
 
 ## Running setup for the first time
+
 > https://app.warp.dev/block/50Z0uBNnkuH4BYQIcJumxs
 
 ```bash
@@ -70,6 +85,7 @@ Run 'pnpm run embedder' to start the embedder
 ```
 
 ## Running embedder for the first time after setup
+
 > https://app.warp.dev/block/WKcnxtBtJnKoJo4yPLMfKD
 
 ```bash
